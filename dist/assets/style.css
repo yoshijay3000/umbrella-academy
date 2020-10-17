@@ -1,5 +1,6 @@
 body { 
     padding-top: 65px; /* this prevents nav bar from covering content*/
+    min-height: 100vh;
 }
 .anchor {
     /* this offsets anchor tag*/
@@ -85,4 +86,10 @@ hr{
     max-height: 50px;
     max-width: 270px;
     background-color: white;
+}
+
+/* -------contact us page------- */
+.allButFooter {
+    min-height: calc(100vh - 250px);
+    /* this is so the footer can stay at the page bottom */
 }

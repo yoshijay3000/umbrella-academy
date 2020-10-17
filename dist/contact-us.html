@@ -22,12 +22,12 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>Umbrella Academy</title>
 </head>
-
 <body>
     <div class="container-fluid">
+      <div class="allButFooter">
         <!-- Nav Bar -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow p-2 bg-white">
-            <a class="navbar-brand mr-4 permanent-marker" href="#">
+            <a class="navbar-brand mr-4 permanent-marker" href="index.html">
                 <img src="images/logo.svg" width="50" height="50" class=" d-inline-block align-middle" alt="logo"
                     loading="lazy">
                 Umbrella Academy
@@ -41,30 +41,32 @@
             <div class="collapse navbar-collapse row" id="navbarSupportedContent">
                 <ul class="navbar-nav col">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle red-rose" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle red-rose" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Subjects
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item red-rose" href="#math">Math</a>
-                            <a class="dropdown-item red-rose" href="#chemistry">Chemistry</a>
-                            <a class="dropdown-item red-rose" href="#physics">Physics</a>
+                            <a class="dropdown-item red-rose" href="index.html#math">Math</a>
+                            <a class="dropdown-item red-rose" href="index.html#chemistry">Chemistry</a>
+                            <a class="dropdown-item red-rose" href="index.html#physics">Physics</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link red-rose" href="#about-us">About us</a>
+                        <a class="nav-link red-rose" href="index.html#about-us">About us</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav col justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link mr-2 red-rose" href="contact-us.html">Contact us</a>
+                        <a class="nav-link mr-2 red-rose active" href="#">Contact us</a>
                     </li>
-                    <button type="button" class="btn btn-outline-dark sunglow red-rose mr-2" data-toggle="modal" data-target="#loginModal">Login</button>
-                    <button type="button" class="btn btn-outline-dark red-rose mr-2" data-toggle="modal" data-target="#signupModal">Sign up</button>
+                    <button type="button" class="btn btn-outline-dark sunglow red-rose mr-2" data-toggle="modal"
+                        data-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-outline-dark red-rose mr-2" data-toggle="modal"
+                        data-target="#signupModal">Sign up</button>
                 </ul>
             </div>
         </nav>
-        
+
         <!-- Login Modal -->
         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -86,7 +88,8 @@
                                 <input type="password" class="form-control" id="loginPassword" required>
                             </div>
                             <button type="submit" class="btn btn-outline-dark sunglow red-rose mr-2">Submit</button>
-                            <button type="button" class="btn btn-outline-dark red-rose" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-outline-dark red-rose"
+                                data-dismiss="modal">Cancel</button>
                         </form>
                     </div>
                 </div>
@@ -133,11 +136,13 @@
                                 <label for="signupGender" class="col-sm-3 col-form-label">Gender</label>
                                 <div class="col-sm-9">
                                     <div class="form-check form-check-inline pt-2">
-                                        <input class="form-check-input" type="radio" name="signupGender" id="signupGenderMale" value="male" checked>
+                                        <input class="form-check-input" type="radio" name="signupGender"
+                                            id="signupGenderMale" value="male" checked>
                                         <label class="form-check-label" for="signupGenderMale">Male</label>
                                     </div>
                                     <div class="form-check form-check-inline pt-2">
-                                        <input class="form-check-input" type="radio" name="signupGender" id="signupGenderFemale" value="female">
+                                        <input class="form-check-input" type="radio" name="signupGender"
+                                            id="signupGenderFemale" value="female">
                                         <label class="form-check-label" for="signupGenderFemale">Female</label>
                                     </div>
                                 </div>
@@ -151,7 +156,8 @@
                             <div class="form-group row">
                                 <label for="signupSchoolName" class="col-sm-3 col-form-label">School</label>
                                 <div class="col-sm">
-                                    <input type="text" class="form-control" id="signupSchoolName" placeholder="School name" required>
+                                    <input type="text" class="form-control" id="signupSchoolName"
+                                        placeholder="School name" required>
                                 </div>
                                 <div class="col-sm">
                                     <select id="signupSchoolType" class="form-control">
@@ -162,139 +168,78 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-lg btn-block btn-light dark-blue red-rose mr-2">Submit</button>
-                            <button type="button" class="btn btn-lg btn-block btn-outline-dark red-rose" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-lg btn-block btn-outline-dark red-rose"
+                                data-dismiss="modal">Cancel</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--Call to action banner-->
-        <div class="call-to-action row">
-            <div class="call-to-action-1 col-lg-8 col-md-6 p-0">
-                <img class="img-fluid" src="images/pexels-max-fischer-5212345.jpg" alt="classroom">
-            </div>
-            <div class="call-to-action-2 col-lg-4 col-md-6 text-white d-flex flex-column justify-content-center p-3">
-                <h1 class="red-rose">Affordable online and offline turtoring!</h1>
-                <button type="button" class="btn btn-outline-light btn-lg btn-block red-rose">Sign up for a free trial today!</button>
-            </div>
+        <!--Contact us form-->
+        <div class="row d-flex justify-content-center pt-4 pb-4">
+            <form class="w-50 mw-100">
+                <h1 class="row red-rose d-flex justify-content-center">Contact Us</h1>
+                <div class="form-group row">
+                    <label for="contactUsStudentName" class="col-sm-3 col-form-label">Student name</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" id="contactUsStudentName" placeholder="Student name" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="contactUsGender" class="col-sm-3 col-form-label">Gender</label>
+                    <div class="col-sm-9">
+                        <div class="form-check form-check-inline pt-2">
+                            <input class="form-check-input" type="radio" name="contactUsGender" id="contactUsGenderMale" value="male"
+                                checked>
+                            <label class="form-check-label" for="contactUsGenderMale">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline pt-2">
+                            <input class="form-check-input" type="radio" name="contactUsGender" id="contactUsGenderFemale"
+                                value="female">
+                            <label class="form-check-label" for="contactUsGenderFemale">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="contactUsSchoolName" class="col-sm-3 col-form-label">School</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="contactUsSchoolName" placeholder="School name" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="" class="col-sm-3 col-form-label"></label>
+                    <div class="col-sm-5">
+                        <select id="contactUsSchoolType" class="form-control">
+                            <option selected>Elementary school</option>
+                            <option>Junior high school</option>
+                            <option>High school</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="contactUsGrade" placeholder="Grade" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="contactUsParent" class="col-sm-3 col-form-label">Parent name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="contactUsParent" placeholder="Parent Name" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="contactUsPhone" class="col-sm-3 col-form-label">Phone</label>
+                    <div class="col-sm-9">
+                        <input type="tel" class="form-control" id="contactUsPhone" placeholder="Phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contactUsPhoneTextarea">Additional Info</label>
+                    <textarea class="form-control" id="contactUsPhoneTextarea" rows="3" placeholder="Additional info..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-light btn-block dark-blue red-rose mr-2">Submit</button>
+            </form>
         </div>
-
-        <!--About us section-->
-        <span class="anchor" id="about-us"></span>
-        <div class="light-background row p-3">
-            <div class="col-lg-6 col-sm-12">
-                <h1 class="dark-blue red-rose p-3">About us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Id diam maecenas ultricies mi. Leo duis ut diam quam nulla porttitor massa id. Volutpat odio facilisis mauris sit.
-                Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Turpis egestas sed tempus urna et pharetra pharetra.
-                Aliquet eget sit amet tellus cras adipiscing. Quis blandit turpis cursus in. Vivamus arcu felis bibendum ut tristique et egestas quis. Augue mauris augue neque gravida. Molestie nunc non blandit massa enim. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus.</p>
-                <p>Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Porta non pulvinar neque laoreet suspendisse
-                interdum. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid p-5" src="images/undraw_professor_8lrt.svg" alt="about us">
-            </div>
-        </div>
-        <div class="about-us dark-blue row p-3 d-flex justify-content-center">
-            <h1 class="red-rose">Meet our Staff</h1>
-        </div>
-        <div class="light-background row p-3 mb-0">
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                <h3>Teacher One</h3>
-                <h5 class="hd-orange-color">Founder</h5>
-                <img class="teacher-img" src="images/openmoji-boy.svg" alt="teacher one">
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                <h3>Teacher Two</h3>
-                <h5 class="hd-orange-color">Math teacher</h5>
-                <img class="teacher-img" src="images/openmoji-girl.svg" alt="teacher two">
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                <h3>Teacher Three</h3>
-                <h5 class="hd-orange-color">Chemistry teacher</h5>
-                <img class="teacher-img" src="images/openmoji-person.svg" alt="teacher three">
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                <h3>Teacher Four</h3>
-                <h5 class="hd-orange-color">Physics teacher</h5>
-                <img class="teacher-img" src="images/openmoji-curly.svg" alt="teacher four">
-            </div>
-        </div>
-
-        <!--Subjects-->
-        <div class="subjects sunglow row p-3 mt-0 d-flex justify-content-center">
-            <h1 class="red-rose">Subjects</h1>
-        </div>
-
-        <!--Math-->
-        <span class="anchor" id="math"></span>
-        <section class="row p-3 mr-5 ml-5">
-            <div class="col-lg-4 col-md-5">
-                <img class="img-fluid subject-img" src="images/undraw_mathematics_4otb.svg" alt="math">
-            </div>
-            <div class="col-lg-8 col-md-7">
-                <div class="subject-heading row">
-                    <h2 class="red-rose col-sm-9">Math</h2>
-                    <a class="d-flex flex-row col-sm-3 align-items-center read-more-icon" href="#">
-                        <h4>Read more</h4>
-                        <i class="fas fa-sign-in-alt ml-2"></i>
-                    </a>
-                </div>
-                <hr>
-                <div class="subject-body">
-                    <p>Bacon ipsum dolor amet incididunt flank pariatur enim. Ut filet mignon short ribs, fatback consectetur ea ut qui
-                    incididunt sausage swine turkey pork loin ullamco ham hock. Picanha aliqua labore chuck. Nulla reprehenderit hamburger,
-                    tail ut cupidatat mollit prosciutto proident non ipsum turkey capicola lorem tenderloin. Doner kevin id, sirloin brisket
-                    short ribs quis meatloaf tempor veniam.</p>
-                </div>
-            </div>
-        </section>
-
-        <!--Chemisty-->
-        <span class="anchor" id="chemistry"></span>
-        <section class="light-background row p-3 mr-5 ml-5">
-            <div class="col-lg-4 col-md-5">
-                <img class="img-fluid subject-img" src="images/undraw_alien_science_nonm.svg" alt="chemistry">
-            </div>
-            <div class="col-lg-8 col-md-7">
-                <div class="subject-heading row">
-                    <h2 class="red-rose col-sm-9">Chemistry</h2>
-                    <a class="d-flex flex-row col-sm-3 align-items-center read-more-icon" href="#">
-                        <h4>Read more</h4>
-                        <i class="fas fa-sign-in-alt ml-2"></i>
-                    </a>
-                </div>
-                <hr>
-                <div class="subject-body">
-                    <p>Ham kevin burgdoggen leberkas, reprehenderit cupim laboris magna chicken. Meatball labore bresaola cupim commodo eu. Est
-                    minim culpa, shank aute ut labore pork loin eiusmod tri-tip. Enim chislic pork incididunt venison.</p>
-                </div>
-            </div>
-        </section>
-
-        <!--Physics-->
-        <span class="anchor" id="physics"></span>
-        <section class="row p-3 mr-5 ml-5">
-            <div class="col-lg-4 col-md-5">
-                <img class="img-fluid subject-img" src="images/undraw_teaching_f1cm.svg" alt="chemistry">
-            </div>
-            <div class="col-lg-8 col-md-7">
-                <div class="subject-heading row pl-3">
-                    <h2 class="red-rose col-sm-9">Physics</h2>
-                    <a class="d-flex flex-row col-sm-3 align-items-center read-more-icon" href="#">
-                        <h4>Read more</h4>
-                        <i class="fas fa-sign-in-alt ml-2"></i>
-                    </a>
-                </div>
-                <hr>
-                <div class="subject-body">
-                    <p>Kielbasa landjaeger aliqua irure. Exercitation nisi incididunt, corned beef reprehenderit shank tongue tempor ad short
-                    ribs turducken culpa filet mignon ipsum. Sunt turkey cupim tongue leberkas incididunt. Strip steak enim elit tongue
-                    turkey. Pariatur shoulder biltong, pastrami spare ribs eiusmod jerky incididunt ex tempor pancetta minim leberkas.</p>
-                </div>
-            </div>
-        </section>
+      </div>
 
         <!--Footer-->
         <footer class="dark-blue row p-3">
@@ -308,7 +253,8 @@
                 <p class="mb-1 ml-4">New York, NY 12345</p>
                 <hr class="thin-hr">
                 <p class="mt-1 mb-0"><i class="fas fa-phone-square-alt"></i> 123-456-7890</p>
-                <p class="mb-0"> <i class="far fa-envelope"></i> <a href="mailto:fake_email@umbrella-academy.com">info@umbrella-academy.com</a> </p>
+                <p class="mb-0"> <i class="far fa-envelope"></i> <a
+                        href="mailto:fake_email@umbrella-academy.com">info@umbrella-academy.com</a> </p>
             </div>
         </footer>
     </div>
