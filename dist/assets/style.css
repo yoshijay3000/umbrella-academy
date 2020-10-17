@@ -1,0 +1,88 @@
+body { 
+    padding-top: 65px; /* this prevents nav bar from covering content*/
+}
+.anchor {
+    /* this offsets anchor tag*/
+    margin-top: -70px; /* height of nav*/
+    display: block;
+    height: 70px; /* height of nav */
+    visibility: hidden;
+    position: relative;
+}
+
+.permanent-marker{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.red-rose{
+    font-family: 'Red Rose', cursive;
+}
+
+.navbar a:hover{
+    color: #FFD23F !important;
+}
+
+.sunglow{
+    background-color: #FFD23F;
+}
+
+.hd-orange-color{
+    color: #CC3300;
+}
+
+.call-to-action{
+    background-color: #1D3354;
+}
+
+.light-background{
+    background-color: #E8E9EB;
+}
+
+.dark-blue{
+    background-color: #1D3354;
+    color: #E8E9EB;
+}
+
+.teacher-img{
+    max-width: 250px;
+}
+
+hr{
+    height: 0;
+    border: 3px solid #FFD23F;
+    margin: 0;
+}
+
+.thin-hr{
+    height: 0;
+    border: 2px solid #FFD23F;
+    margin: 0;
+}
+
+.subject-heading{
+    display: flex;
+    justify-content: space-between;
+    color: #0E6BA8;
+}
+
+.read-more-icon{
+    /* color: #1D3354; */
+    color: #CC3300;
+    font-size: 1.3em;
+}
+
+.read-more-icon:hover{
+    color: #FFD23F !important;
+    text-decoration: none;
+}
+
+.subject-img{
+    max-height: 300px;
+}
+
+.footer-logo
+{
+    max-height: 50px;
+    max-width: 270px;
+    background-color: white;
+}
