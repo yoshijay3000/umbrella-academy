@@ -7,5 +7,6 @@ npm install
 ```
 
 ## Usage
-The Homepage is in dist/index.html
-The Contact Us page is in contact-us.html
+The Homepage is in "dist/index.html".
+
+The Contact Us page is in "dist/contact-us.html".
